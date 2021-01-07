@@ -1,24 +1,61 @@
 <!doctype html>
 <html>
 <head>
-<title>Songs</title>
-<meta charset = "utf-8">
+  <title>Songs</title>
+  <meta charset = "utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1{
+      font-size:60px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:200px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 300px 1fr;
+    }
+    #grid ol{
+      padding-left:44px;
+    }
+    #grid #article{
+      padding-top:25px;
+      padding-left:25px;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">Favorite songs</a></h1>
-<ol>
-  <li><a href = "1.html">The story never ends</a></li>
-  <li><a href = "2.html">I like me better</a></li>
-  <li><a href = "3.html">Breathe</a></li>
-  <li><a href = "4.html">The other</a></li>
-</ol>
-<img src="lauv.jpg" width = "300">
-<h2><a href="https://www.youtube.com/watch?v=2kFNGAEo45Q"
-  target="_blank" title = "The story never ends">The story never ends</a></h2>
-<h3>Lauv</h3>
-Stick, stick to your stones cause that's all you know<br>
-I was caught in the middle<br>
-I swallow my words down to the bone<br>
-'Cause nothing's that simple<br>
-</body>
-</html>
+  <div id="grid">
+    <ol>
+      <li><a href = "1.html" >The story never ends</a></li>
+      <li><a href = "2.html">I like me better</a></li>
+      <li><a href = "3.html">Breathe</a></li>
+      <li><a href = "4.html">The other</a></li>
+    </ol>
+    <div id="article">
+      <img src="lauv.jpg" width = "300">
+      <h2><a href="https://www.youtube.com/watch?v=2kFNGAEo45Q"
+        target="_blank" title = "The story never ends">The story never ends</a></h2>
+        <h3>Lauv</h3>
+        Stick, stick to your stones cause that's all you know<br>
+        I was caught in the middle<br>
+        I swallow my words down to the bone<br>
+        'Cause nothing's that simple<br>
+      </div>
+    </div>
+  </body>
+  </html>
